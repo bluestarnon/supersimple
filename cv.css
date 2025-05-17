@@ -17,13 +17,12 @@ body {
     width: 100%;
     max-width: 1000px;
     min-height: 1000px;
-    margin: 50px;
+    margin: 3%;
     background-color: #fff;
     display: grid;
-    grid-template-columns: 1fr 1.3fr;
+    grid-template-columns: 40% 70%;
     box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-
 }
 
 .upper {
@@ -31,12 +30,12 @@ body {
     position: absolute;
     background-color: #274472;
     margin: 0;
-    width: 90%;
-    height: 40%;
+    width: 800px;
+    height: 400px;
     border-radius: 20px;
     transform: rotate(-0.15turn);
-    top: -25%;
-    right: 25%;
+    top:-300px;
+    left:-120px;
     box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.5);
 }
 
