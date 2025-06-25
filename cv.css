@@ -35,8 +35,8 @@ body {
     height: 400px;
     border-radius: 20px;
     transform: rotate(-0.15turn);
-    top:-300px;
-    left:-120px;
+    top: -300px;
+    left: -120px;
     box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -132,63 +132,73 @@ body {
 
 }
 
-  .skill-flex {
+.skill-flex {
     display: flex;
-    flex-direction: column;       /* stack children vertically */
-    justify-content: center;      /* center vertically */
-    align-items: center;          /* center horizontally */
-    height: 100vh;                /* full viewport height */
-    border: 1px solid #ddd;       /* visualize container */
-  }
+    flex-direction: column;
+    /* stack children vertically */
+    justify-content: center;
+    /* center vertically */
+    align-items: center;
+    /* center horizontally */
+}
+
+.management-skills,
+.critical-thinking,
+.project-management {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
 
 
-  
 
-  /* Responsive: stack columns vertically on narrow screens */
-  @media (max-width: 700px) {
+/* Responsive: stack columns vertically on narrow screens */
+@media (max-width: 700px) {
+
     .management-skills,
     .critical-thinking,
     .project-management {
-      grid-template-columns: 1fr;
-      max-width: 300px;
-      padding-bottom: 10px;
+        grid-template-columns: 1fr;
+        max-width: 300px;
+        padding-bottom: 10px;
     }
-  }
+}
 
-  /* Progress bar container */
-  .percent {
+/* Progress bar container */
+.percent {
     position: relative;
     width: 110px;
     background-color: #5290c9;
     height: 9px;
     margin-top: 2px;
     overflow: hidden;
-  }
+     margin-left: 10%;
+}
 
-  @media (max-width: 700px) {
+@media (max-width: 700px) {
     .percent {
-      margin-left: 25%;
+        margin-left: 10%;
     }
-  }
+}
 
-  /* Inner filled bar */
-  .ehg {
+/* Inner filled bar */
+.ehg {
     position: absolute;
     width: 80%;
     top: 0;
     left: 0;
     height: 100%;
     background-color: #c3e0e5;
-  }
+}
 
-  .six {
+.six {
     position: absolute;
     width: 60%;
     top: 0;
     left: 0;
     height: 100%;
     background-color: #c3e0e5;
-  }
+}
 
 .exp {
     display: grid;
@@ -198,26 +208,30 @@ body {
 }
 
 @media (max-width: 700px) {
-  .exp {
-    grid-template-columns: 1fr; 
+    .exp {
+        grid-template-columns: 1fr;
+    }
 }
-}
+
 .progress-1 {
     position: relative;
     float: left;
     text-align: center;
     display: flex;
-  flex-direction: column;
-  justify-content: center;        /* Center vertically */
-  align-items: center;            /* Center horizontally */
+    flex-direction: column;
+    justify-content: center;
+    /* Center vertically */
+    align-items: center;
+    /* Center horizontally */
 }
 
 @media (max-width: 700px) {
-  .progress-1 {
-    margin-top: 10px;
-    margin-bottom: 10px; 
+    .progress-1 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 }
-}
+
 .barOverflow-1 {
     position: relative;
     width: 100px;
@@ -244,9 +258,11 @@ body {
     float: left;
     text-align: center;
     display: flex;
-  flex-direction: column;
-  justify-content: center;        /* Center vertically */
-  align-items: center;            /* Center horizontally */
+    flex-direction: column;
+    justify-content: center;
+    /* Center vertically */
+    align-items: center;
+    /* Center horizontally */
 }
 
 .barOverflow-2 {
@@ -273,12 +289,12 @@ body {
 
 .seventy {
     color: #c3e0e5;
-  
+
 }
 
 .fifty {
     color: #c3e0e5;
-    
+
 }
 
 .h-c {
@@ -296,7 +312,7 @@ body {
 .container .right_side {
     position: relative;
     background: #fff;
-    padding:min(5em,8%);
+    padding: min(5em, 8%);
 }
 
 .profile-text {
